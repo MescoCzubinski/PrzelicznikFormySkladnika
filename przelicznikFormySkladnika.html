@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Mieszko Czubiński">
+
+        <title>Norma siewu</title>
+        
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    <main>
+    <div id="headerArea"></div>
+    <div id="container">
+        <header>
+            <div id="header">
+                <h1>Przelicz formę składnika</h1>
+                <button id="reset">Resetuj</button>
+            </div>
+        </header>
+        <div class="calculator">
+            <article>
+                <div class="segments">
+                    <section>
+                        <div class="calculations">
+                            <div>
+                                <select id="conversion-select" class="selectBox">
+                                    <option value="" selected hidden>Wybierz przelicznik</option>
+
+                                    <option value="2.291">P na P&#8322;O&#8325;</option>
+                                    <option value="0.436">P&#8322;O&#8325; na P</option>
+
+                                    <option value="1.205">K na K&#8322;O</option>
+                                    <option value="0.830">K&#8322;O na K</option>
+
+                                    <option value="1.399">Ca na CaO</option>
+                                    <option value="0.715">CaO na Ca</option>
+
+                                    <option value="1.780">CaO na CaCO&#8323;</option>
+                                    <option value="0.560">CaCO&#8323; na CaO</option>
+
+                                    <option value="1.658">Mg na MgO</option>
+                                    <option value="0.603">MgO na Mg</option>
+
+                                    <option value="3.450">MgO na MgSO&#8324; &#8901; H&#8322;O</option>
+                                    <option value="0.290">MgSO&#8324; &#8901; H&#8322;O na MgO</option>
+                                    
+                                    <option value="6.150">MgO na MgSO&#8324; &#8901; 7 H&#8322;O</option>
+                                    <option value="0.163">MgSO&#8324; &#8901; 7 H&#8322;O na MgO</option>
+                                    
+                                    <option value="1.362">Na na Na&#8322;O</option>
+                                    <option value="0.742">Na&#8322;O na Na</option>
+
+                                    <option value="2.000">S na SO&#8322;</option>
+                                    <option value="0.500">SO&#8322; na S</option>
+                                    
+                                    <option value="2.500">S na SO&#8323;</option>
+                                    <option value="0.400">SO&#8323; na S</option>
+                                    
+                                    <option value="3.000">S na SO&#8324;</option>
+                                    <option value="0.330">SO&#8324; na S</option>
+                                                                        
+                                    <option value="5.438">S na K&#8322;SO&#8324;</option>
+                                    <option value="0.184">K&#8322;SO&#8324; na S</option>
+                                                      
+                                    <option value="4.250">S na CaSO&#8324;</option>
+                                    <option value="0.235">CaSO&#8324; na S</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="calculations">
+                            <div class="input">
+                                <div class="unit">Mnożnik:</div>
+                                <div class="unit" id="multiplier"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="calculations">
+                            <div class="input">
+                                <input type="text" inputmode="numeric" pattern="[0-9]*" id="input-to-calculate" placeholder="Wartość do przeliczenia:">
+                                <div class="unit">kg</div>
+                            </div>
+                        </div>
+                    </section>
+    
+                    <section>
+                        <div class="calculations">
+                            <div class="input">
+                                <div class="unit">Wynik:</div>
+                                <div class="unit" id="result-display"></div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </article>
+            
+        </div>
+    </div>
+    </main>
+    <script src="przelicznikFormySkladnika.js" defer></script>
+    </body>
+</html>

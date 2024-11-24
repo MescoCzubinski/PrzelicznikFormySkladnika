@@ -1,0 +1,117 @@
+body {
+  background-color: rgba(0, 132, 55, 0.2);
+  color: rgb(33, 37, 41);
+  font-family: "Lato", sans-serif;
+}
+#container {
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 5px 10px 0px;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255);
+}
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.calculations {
+  padding-bottom: 20px;
+}
+h1 {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+}
+.input {
+  display: flex;
+  align-items: center;
+}
+input {
+  height: 46px;
+  flex-grow: 1;
+
+  background-color: transparent;
+  border: 2px solid #a3a3a3;
+  border-radius: 25px;
+  transition: border-color 0.4s, background-color 0.4s, color 0.4s;
+
+  font-size: 20px;
+  padding-left: 5px;
+  padding-top: 4px;
+}
+select {
+  width: 275px;
+  height: 50px;
+  font-size: 20px;
+  color: #a3a3a3;
+  border: 2px solid #a3a3a3;
+  background-color: transparent;
+  border-radius: 25px;
+  padding-left: 5px;
+  transition: border-color 0.4s, background-color 0.4s, color 0.4s;
+}
+#reset {
+  height: 50px;
+  max-width: 90px;
+  border-radius: 25px;
+  font-size: 22px;
+  background-color: transparent;
+  border: 2px solid rgb(0, 132, 55);
+  color: rgb(0, 132, 55);
+  margin-top: 10px;
+  transition: background-color 0.5s;
+}
+input:hover,
+select:hover {
+  color: rgb(0, 132, 55) !important;
+  border-color: rgb(0, 132, 55) !important;
+  background-color: rgba(0, 132, 55, 0.15);
+  box-shadow: 0px 0px 15px 2px #cccccc;
+}
+input:hover::placeholder,
+select:hover::placeholder {
+  color: rgb(0, 132, 55);
+}
+input:hover.toCalculate,
+input:focus.toCalculate,
+input.toCalculate {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  color: rgb(33, 37, 41) !important;
+  text-align: center;
+}
+input:focus,
+select:focus {
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+input.visited,
+select.visited {
+  color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+.unit {
+  font-size: 22px;
+  padding-left: 3px;
+}
+ ::placeholder {
+  font-size: 20px;
+  color: #a3a3a3;
+}
+#reset:hover {
+  background-color: rgba(0, 132, 55, 0.4);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
