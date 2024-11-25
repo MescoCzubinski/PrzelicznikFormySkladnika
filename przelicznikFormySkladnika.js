@@ -9,7 +9,6 @@ visited.forEach(input => {
         }
     });
 });
-
 function textToNumber(variable) {
     variable = variable.replace(/[^0-9.,]/g, '');
     if (variable.includes(",")) {
@@ -42,7 +41,7 @@ const elementInput = document.querySelector('#input-to-calculate')
 const elementResult = document.querySelector('#result-display')
 const elementReset = document.querySelector('#reset')
 
-elementConversionSelect.addEventListener('click', function() {
+elementConversionSelect.addEventListener('onchange', function() {
     elementMultiplier.innerHTML = elementConversionSelect.value
 })
 
