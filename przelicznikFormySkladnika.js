@@ -41,7 +41,7 @@ const elementInput = document.querySelector('#input-to-calculate')
 const elementResult = document.querySelector('#result-display')
 const elementReset = document.querySelector('#reset')
 
-elementConversionSelect.addEventListener('onchange', function() {
+elementConversionSelect.addEventListener('change', function() {
     elementMultiplier.innerHTML = elementConversionSelect.value
 })
 
